@@ -1,38 +1,56 @@
-#principal{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 90%;
-    margin: auto;
+body{
+    font-family: tahoma, arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.header-topo{
-    background-color: rgb(18, 21, 65);
+#principal{
+    width: 1024px;
+    margin: 20px auto;
+}
+
+.header-top{
+    background: #162028;
     position: relative;
     height:50px;
 }
 
-.header-topo img{
-    margin-top: 10px;
-    margin-left: 110px;
+.logotipo{
+    margin: 5px 0 0 135px;
 }
 
-.header-nav ul li{
+.header-nav{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+}
+
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header-nav li{
     list-style: none;
     display: inline-block;
-    position: relative;
     top: -45px;
     left: 300px;
+    margin-right: 0 15px 0 0;
+    padding: 13px;
 }
 
-.header-nav ul li a{
+.header-nav a{
     text-decoration: none;
-    color: #ccc;
+    color: #425564;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 5px;
     padding:10px;
+    font-size: 12px;
+    transition: color .3s linear; /*animação do link*/
 }
 
-.header-nav ul li a:hover{
-    color: rgb(107, 54, 230)
+.header-nav a:hover{
+    color: white;
 }
 .topo{
     width: 100%;
@@ -41,70 +59,91 @@
 
 .portfolio{
     text-align: center;
-    padding: 40px;
-    line-height: 1.8em;
+    padding: 50px 100px;
+  
 }
 
 .portfolio h1{
-    font-size: 30px;  
+    font-size: 36px;  
+    color: #252525;
 }
 
+.portfolio p{
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+}
 
-    
+.gallery{
+    color: #555;
+    padding: 0 100px 50px 100px;
+    overflow: auto;
+}    
+
 .gallery-card{
-    display: inline-block;
+    width: 32%;
+    float: left;
+    text-align: center;
 }
-
 
 .gallery-title{
     color: #555555;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 2px 4px 3px #ccc;
+    letter-spacing: 4px;
     font-weight: bold;
-}
-
-.gallery-text{
-    text-align: center;
-    color: #ccc;
-    font-size: 14px;;
+    font-size: 16px;
 }
 
 .about{
-    text-align: left;
-    height: 450px;
+    background-color: #003d52;
+    padding: 100px;
+    color: white;
     background-image: url(../imagens/bg_detalhe.png);
-    background-size:cover; 
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .about h2{
-    font-size: 40px;
-    padding: 80px 0 30px 70px;
+    font-size: 50px;
     text-transform: uppercase;
-    color: white;
+    font-weight: normal;
 }
 
 .about p{
-    color: white;
-    padding: 10px 80px 0 70px;
+   line-height: 1.5;
+   width: 70%;
 }
 
+#contact{
+    margin: 50px 0;
+}
 #contact address{
     text-align: center;
     text-transform: uppercase;
-    color: rgb(69, 69, 212);
+    color:#143f52;
+    font-size: 26px;
+    font-style: normal;
     font-weight: bold;
-    margin: 30px;
 }
 
-footer{
-    background-color: black;
-    padding: 10px;
-    margin-top: 30px;
-    color: rgba(62, 147, 226, 0.5);
+.maps{
+    width: 100%;
+    height: 450px;
+    margin-top: 15px;
+}
+
+.maps iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.rodape{
+    background-color: #0b171f;
+    padding: 25px;
+    color: #6f8597;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size: 12px;
 }
 
