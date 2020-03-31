@@ -1,0 +1,110 @@
+#principal{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+.header-topo{
+    background-color: rgb(18, 21, 65);
+    position: relative;
+    height:50px;
+}
+
+.header-topo img{
+    margin-top: 10px;
+    margin-left: 110px;
+}
+
+.header-nav ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    top: -45px;
+    left: 300px;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding:10px;
+}
+
+.header-nav ul li a:hover{
+    color: rgb(107, 54, 230)
+}
+.topo{
+    width: 100%;
+    margin-top: -16px;
+}
+
+.portfolio{
+    text-align: center;
+    padding: 40px;
+    line-height: 1.8em;
+}
+
+.portfolio h1{
+    font-size: 30px;  
+}
+
+
+    
+.gallery-card{
+    display: inline-block;
+}
+
+
+.gallery-title{
+    color: #555555;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 4px 3px #ccc;
+    font-weight: bold;
+}
+
+.gallery-text{
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;;
+}
+
+.about{
+    text-align: left;
+    height: 450px;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-size:cover; 
+}
+
+.about h2{
+    font-size: 40px;
+    padding: 80px 0 30px 70px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.about p{
+    color: white;
+    padding: 10px 80px 0 70px;
+}
+
+#contact address{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(69, 69, 212);
+    font-weight: bold;
+    margin: 30px;
+}
+
+footer{
+    background-color: black;
+    padding: 10px;
+    margin-top: 30px;
+    color: rgba(62, 147, 226, 0.5);
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
