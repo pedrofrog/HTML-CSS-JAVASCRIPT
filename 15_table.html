@@ -1,0 +1,104 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+
+            table{
+                border-collapse: collapse;
+                width: 80%;
+                margin: auto;
+                background: beige;
+            }
+
+            th{
+                background: red;
+                border: 2px solid chocolate;
+                padding: 15px;
+            }
+            td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>  
+    <body>
+      
+        <table> <!--tag para iniciar a tabela-->
+
+            <caption>Tabela de preços de cursos</caption> <!--titulo da tabela (acessibilidade)-->
+
+            <thead> <!-- tag semantica de cabeçalho da tabela-->
+
+                <tr> <!-- tag que indica mudança de linha da tabela table row-->
+                    <th>Área</th> <!-- table header tag semantica que indica o cabeçalho, a linha principal-->
+                    <th>Curso</th>
+                    <th>Investimento</th>
+                </tr>
+
+            </thead>
+
+            <tfoot> <!-- tag que indica o rodapé da tabela, vem logo após o thead-->
+
+                <tr>
+                    <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+                </tr> <!-- colspan serve para aumentar o tamanho de uma td de acordo com o valor atribuido-->
+
+            </tfoot>
+
+            <tbody> <!-- tag que indica o corpo da tabela, vem sempre por último-->
+
+                <tr>
+                    <td rowspan="3">Design </td> <!-- table description, indica a linha normal da tabela-->
+                    <td>InDesign </td> <!--rowspan serve para aumentar o tamanho da linha, de acordo com o valor atribuido-->
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                 
+                    <td>Photoshop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr>
+                 
+                    <td>Ilustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">Development</td>
+                    <td>HTML</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>CSS</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    
+                    <td>Javascript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                   
+                    <td>PHP</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+    
+</html> 
