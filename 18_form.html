@@ -1,0 +1,93 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+    </head>  
+    <body>
+        <h1>Exemplo de formulario</h1>
+
+        <form action="#" method="POST" class="formLogin"> <!--para criar um formulario se começa com a tag <form> o action é para onde será mandado os dados e o metodo get ou post-->
+            <fieldset> <!-- cria um campo para um formulario especifico dentro da tag form-->
+
+                <legend>Dados pessoais</legend> <!--nome formulario-->
+
+                <label>Email</label>
+                <input type="email" required maxlength="12" placeholder="Digite um email valido"> <!--o atributo required faz com que seja obrigatorio preencher a informação, o atributo maxlength determina o numero maximo de caracteres, o atributo placeholder da uma dica do que deve ser preenchido-->
+            
+                <label>Número de filhos</label>
+                <input type="number" min="0" max="1000" step=".5"> <!--o atributo number determina que seja inserido apenas numeros, pode ser usado em conjunto com max e min, e com o step, que pode ser usado para determinar um intervalo entre os numeros-->
+
+               
+                
+                <label>Nascimento</label>
+                <input type="date" min="2018-01-30" max="2138-01-30"> <!-- o atributo date permite que seja inserida uma data, e pode ser usado com min e max, no padrão americado aaaa/mm/dd-->
+
+                <p>Sexo</p>
+                <label>Masculino
+                <input type="radio" name="sexo" value="M"> <!-- radio serve para escolher uma das opções definidas, e para isso deve-se também incluir esses campos com o mesmo nome para escolher um ou outro apenas e não todos-->
+                </label> <!--colocar o input dentro do label faz com que a opção possa ser selecionada clicando no radio ou na palavra-->
+                <label>Feminino
+                <input type="radio" name="sexo" value="F"></label>
+
+                <label>Estado</label>
+                <select name="estado"> <!--o select cria uma caixa em que podem ser inseridas opções<option> para o usuario escolher-->
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Área de interesse</legend>
+
+                <label><input type="checkbox" name="html" value="html"> HTML</label>
+
+                <label><input type="checkbox" name="css" value="css"> CSS</label>
+
+                <label><input type="checkbox" name="JS" value="LS"> Javascript</label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Mensagem</legend>
+
+                <textarea name="msg" cols="30" rows="10" style="resize: none"></textarea> <!-- textarea e o campo em que o usuario pode escrever alguma mensagem, pode ser definida o tamanho por col e rows, style none para não ser alterado o tamanho pelo usuario-->
+
+                <textarea name="contrato" cols="30" rows="10" style="resize: none" readonly>Aqui entra o texto do contrato que precisa ser aceito.
+                </textarea> <!--pode ser utilizado o atributo readonly para deixar o texto como somente leitura-->
+                <label><input type="checkbox" checked>Li e aceito</label> <!--o atributo checked serve para deixar já marcado algum input-->
+
+                <input type="range" min="0" max="10" step="2"> <!--o atributo range serve para colocar uma barra que o usuario movimenta para atribuir algum valor, pode ter min, max e step-->
+                <input type="time"><!--atributo para colocar hora-->
+                <input type="color"><!--atributo color para selecionar cor-->
+
+                <select size="5" multiple> <!--o atributo multiple serve para que possa ser selecionada mais de uma opção-->
+                    <option>opcao 1</option>
+                    <option>opcao 2</option>
+                    <option>opcao 3</option>
+                    <option>opcao 4</option>
+                    <option>opcao 5</option>
+                </select>
+            </fieldset>
+
+
+                <input type="submit" value="Enviar"><!--submit envia as informações-->
+                <input type="button" value="button"> <!--input type button é apenas um botão que pode ser alguma outra função com javascript, por exemplo-->
+                <input type="reset" value="reset"><!--limpa as informações-->
+
+          
+
+        </form>
+
+    </body>
+    
+</html> 
