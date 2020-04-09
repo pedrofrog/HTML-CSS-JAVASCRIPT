@@ -1,0 +1,38 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            #radius{
+                background: orange;
+                width: 200px;
+                height: 200px;
+                margin: 50px auto;
+                border-radius:50px 100px / 100px 50px; /* border radius serve para arredondar a borda de um objeto, os valores funcionam como em um margin ou padding, podendo ser colocados os valores no eixo horizontal e vertical respectivamente*/
+           
+                box-shadow: 30px 0px 10px -20px black;/*box-shadow serve para colocar uma sombra no objeto sendo colocado o deslocamento horizontal, deslocamento vertical, esfumaçamento, tamanho da sombra e cor, pode ser colocada mais de uma sombra no mesmo objeto apenas separando por virgula*/
+            }
+
+            h1{
+                font-family:sans-serif;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: -10px -10px 0 #ddd; /* text-shadow coloca sombra no texto, valores em deslocamento eixo horizontal, vertical, esfumaçamento e cor*/
+            }
+        </style>
+    </head>  
+    <body>
+        <h1>CSS efeitos</h1>
+
+        <div id="radius"></div>
+
+    </body>
+    
+</html> 

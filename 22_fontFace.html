@@ -1,0 +1,31 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            @font-face{ /* @font-face é a diretiva para se colocar fontes personalizadas, o site css tricks tem bastante recurso nesse sentido*/
+                font-family: "nadia"; /*da pra se colocar fontes personalizadas, basta colocar o nome e a source dela*/
+                src: url(nadia/nadia-serif.eot);
+                src: url(nadia/nadia-serif.woff) format("woff"), /*format serve para mostrar para o browser qual o formato a ser baixado, fazendo isso evita carregar arquivos desnecessarios*/
+                     url(nadia/nadia-serif.ttf) format("truetype"),
+                     url(nadia/nadia-serif.svg) format("svg");
+            }
+            h1{
+                font-family: nadia, Arial, Helvetica, sans-serif;
+            }
+
+        </style>
+    </head>  
+    <body>
+        <h1>estrutura basica</h1>
+
+    </body>
+    
+</html> 
