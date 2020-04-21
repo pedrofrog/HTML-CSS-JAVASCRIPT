@@ -1,0 +1,126 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+
+            article:nth-child(1) a{  /* seleciona todas as tags a do primeiro filho em que o elemento pai seja um article*/
+                color: red;
+            }
+
+            article:nth-child(3) > p{ /* seleciona o filho direto que seja paragrafo do terceiro filho em que o elemento pai seja um article*/
+                color: red;
+            }
+
+            article:nth-child(5) h3 + p{ /* seleciona o primeiro filho que seja paragrafo imediatamente posterior a h3 do quinto filho em que o elemento pai seja um article*/
+                margin-top: 50px;
+            }
+
+            article:nth-child(7) h3 ~ p{ /* seleciona todos os filhos que sejam paragrafo imediatamente posterior a h3 do setimo filho em que o elemento pai seja um article*/
+                color: orange;
+            }
+
+            article:not(.destaque){ /* seleciona todo article que possui a classe destaque para não aplicar a regra de css*/
+                color: orange;
+            }
+            .destaque{
+                background: yellow;
+            }
+
+            a[href="#"]{ /* seleciona todas as tags a com o atributo href com o valor "#"*/
+                opacity: .2;
+            }
+
+            a[href^="http"]{ /* seleciona todas as tags a com o atributo href que começam com o valor "http"*/
+                color: red;
+            }
+
+            a[title]{  /*seleciona as tags a que possuam o atributo title*/
+                color: green;
+            }
+
+            a[href$=".pdf"]{ /*seleciona as tags a que possuam o atributo href que terminam com .pdf*/
+                text-decoration: none;
+            }
+
+        </style>
+    </head>  
+    <body>
+        <article>
+            <h3>
+                Titulo
+            </h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>
+                Titulo
+            </h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>
+                Titulo
+            </h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+
+            <p>antes do titulo</p>
+
+            <h3>
+                Titulo
+            </h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article class="destaque">
+
+            <p>antes do titulo</p>
+
+            <h3>
+                Titulo
+            </h3>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+            <li><a href="http://serfrontend.com/qq.pdf" target="_blank">link externo</a></li>
+            <li><a title="veja exercicio anterior" href="23_transition.html">link interno</a></li>
+        </ul>
+        <br>
+        <br>
+
+    </body>
+    
+</html> 
