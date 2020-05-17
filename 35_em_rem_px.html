@@ -1,0 +1,68 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>pagina de exemplo estrutura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+
+            html{
+                font-size: 32px;
+            }
+
+            body{
+
+                font: 16px sans-serif;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            div{
+                border: 1px solid black;
+                /*padding: 16px*/
+                padding: 1em;
+                width: 320px;
+                /*320 / 16 */
+                width: 20em;
+                margin: 100px auto;
+                font-size: 16px;
+                /* 100 / 16 */
+                margin: 6.25em auto;
+            }
+
+            p{
+                margin: 0;
+                line-height: 1.5;
+                font-size: 1.25em;
+                /* 16 x 1.25 = 20px*/
+            }
+
+            a{
+                font-size: 1.2em;
+                /* 24 / 20 = 1.2 *  para ter um tamanho equivalente a 24 px em EM, divide-se 24 por 20 que é o font-size do elemento pai*/
+                font-size: 1rem; /* rem pega o tamanho do elemento principal da página (html)*/
+            }
+
+        </style>
+    </head>  
+    <body>
+        <h1>unidades de medida</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Labore, nam voluptatem. <a href="#">Debitis iusto nobis incidunt</a> 
+                praesentium odio at ratione, ea veritatis, consequatur 
+                quasi quos hic amet, maiores esse vitae assumenda?</p>
+        </div>
+
+        
+
+    </body>
+    
+</html> 
