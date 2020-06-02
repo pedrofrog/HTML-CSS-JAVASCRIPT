@@ -1,0 +1,76 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>calculadora</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Pedro">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <style>
+    
+            body{
+                font-family: sans-serif;
+            }
+
+            #calculator{
+                margin: 15px auto;
+                display:grid;
+                background-image: linear-gradient(#b7b7b7, #9c9c9c);
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,.8);
+                width: 200px;
+                padding: 30px;
+                grid-template-rows: auto repeat(5, [row-start]40px[row-end]);
+                grid-template-columns: repeat(4, [col-start]1fr[col-end]);
+                gap: 5px;
+
+            }
+
+            button{
+               padding: .25em;
+            }
+
+            #display{
+                grid-column: col-start 1 / col-end 4;
+                background-image: linear-gradient(#c5c5c5, #e0e0e0);
+                text-align: right;
+                padding: 10px;
+                font-size: 1.4em;
+                box-shadow: inset 3px 2px 0 white;
+                margin-bottom: 15px;
+
+            
+            }
+
+            .mais{
+                grid-row: row-start 4 / row-end 5;
+                grid-column: col-start 4 / col-end 4;
+                background-color: #adadad;
+                
+            }
+
+            .zero{
+                grid-column: col-start 1 / col-end 2;
+                background-color: #adadad;
+            }
+
+
+        </style>
+    </head>  
+    <body>
+        <div id="calculator">
+            <div id="display">0</div>
+
+            <button>AC</button>  <button>%</button>  <button>X</button>  <button>/</button>
+            <button>7</button>  <button>8</button>  <button>9</button>  <button>=</button>
+            <button>4</button>  <button>5</button>  <button>6</button>  <button>-</button>
+            <button>1</button>  <button>2</button>  <button>3</button>  <button class="mais">+</button>
+            <button class="zero">0</button>  <button>,</button>  
+
+        </div>
+
+    </body>
+    
+</html> 
