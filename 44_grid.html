@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/Pedro/Downloads/original%20(3).html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> pagina de exemplo estrutura basica </title>
+        
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            .gridContainer{
+                width: 300px;
+                background: #ccc;
+            }
+
+            .gridItem{
+                background: #999;
+                
+                font-size: 2em;
+                font-family: sans-serif;
+            }
+            .gridItem:nth-child(even){
+                background: #999;
+                color: white;
+            }
+            .gridItem:nth-child(odd){
+                background: #eee;
+            }
+
+            /*GRID*/
+            .gridContainer{
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px;
+                                                /*1 fr é uma fração do espaço disponível*/
+                grid-template-columns:repeat(3, 1fr) 100px; /* atalho quando há valores repetidos*/
+                grid-row-gap: 30px;
+                grid-column-gap: 12px ;
+                grid-gap: 30px 10px; /*atalho para grid row gap e grid column gap*/
+            }
+
+            .gridItem:nth-child(1){ /*posicionar itens*/
+                grid-row-start: 1;
+                grid-row-end:2;
+                grid-column-start: 2;
+                grid-column-end: -1; /* -1 se referencia a ultima linha*/
+
+                grid-row: 1 / 2; /* atalho para grid row start e end*/
+                grid-column: 2/ -1; /* atalho para grid column start e end*/
+               /* grid-column: 2 / span 2; começa na 2 coluna e essa coluna ocupa 2 espaços */
+            }
+
+            .gridItem:nth-child(2){
+                grid-row: 1 / span 2;
+            }
+
+            .gridItem:nth-child(6){
+                grid-column: 1 / -1;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Grid Layout</h2>
+        
+        
+        <div class="gridContainer">
+            <div class="gridItem">1</div>
+            <div class="gridItem">2</div>
+            <div class="gridItem">3</div>
+            <div class="gridItem">4</div>
+            <div class="gridItem">5</div>
+            <div class="gridItem">6</div>
+        </div>
+        
+        
+    
+</body></html>
