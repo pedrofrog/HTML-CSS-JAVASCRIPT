@@ -1,0 +1,40 @@
+    <!doctype html>
+    <html>
+        <head>
+            <title>Logica de Programação Javascript</title>
+        </head>
+        <body>
+            <h1>Lógica de programação com Javascript</h1>
+        </body>
+
+        <script>
+            var numero = prompt("Digite um número");
+            numero = parseFloat(numero);
+
+            var indice = 1;
+            //repita até que indice seja <= 1000
+            while(indice <= 1000){
+                 document.write(numero + " X "+ indice + " = " + (numero * indice) + "<br>" );
+
+                 indice = indice + 1;
+            }
+            document.write("saiu do loop");
+
+           
+           // loop do while
+            do{
+                document.write(numero + " X "+ indice + " = " + (numero * indice) + "<br>" );
+
+                indice = indice + 1;
+            }while(indice <= 1000)
+            document.write("saiu do loop");
+
+            // loop for
+            for(indice = 1; indice <= 1000; indice++){
+                document.write(numero + " X "+ indice + " = " + (numero * indice) + "<br>" );
+            }
+           
+
+            
+        </script>
+    </html>
